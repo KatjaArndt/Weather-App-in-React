@@ -7,7 +7,7 @@ export default function App() {
       <Weather />
       <div className="github-repository">
         <a
-          href="https://github.com/KatjaArndt/Weather-App"
+          href="https://github.com/KatjaArndt/Weather-App-in-React"
           target="_blank"
           rel="noreferrer"
           alt="Link to github repository"
