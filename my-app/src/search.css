@@ -1,0 +1,50 @@
+.row {
+    max-width: 500px;
+    margin: 0px auto;
+  }
+  .btn {
+    line-height: 1.4em;
+  }
+  
+  .city-text {
+    border: 1px solid #eba689;
+    font-size: smaller;
+  }
+  
+  ::placeholder {
+    opacity: 0.4;
+  }
+  
+  .city-text:hover {
+    background-color: #eeeeee;
+  }
+  
+  .submit-button {
+    background-color: #eba689;
+    box-shadow: 0 20px 40px rgb(65 50 100 / 10%);
+    border: 1px solid #eba689;
+    font-size: smaller;
+  }
+  
+  .submit-button:hover {
+    background-color: #ee7862;
+    border: 1px solid #ee7862;
+    font-weight: bold;
+  }
+  
+  .location-button {
+    box-shadow: 0 20px 40px rgb(65 50 100 / 10%);
+    background-color: #b0b3a2;
+    border: 1px solid#b0b3a2;
+    font-size: smaller;
+  }
+  
+  .location-button:hover {
+    background-color: #848871;
+    border: 1px solid #848871;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 480px) {
+  }
+  

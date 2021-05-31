@@ -1,0 +1,21 @@
+h1 {
+    color: #6d7975;
+    text-transform: uppercase;
+    font-family: "Amatic SC", cursive;
+    font-size: 100px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+    line-height: 0.8;
+  }
+  h2 {
+    color: #6d7975;
+    font-size: smaller;
+    margin: 0;
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  

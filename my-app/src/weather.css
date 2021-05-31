@@ -1,0 +1,67 @@
+.container-app {
+    max-width: 500px;
+    text-align: center;
+    display: block;
+    margin: 20px auto 0px;
+    padding: 0px 0px 0px;
+    border-color: rgb(59, 59, 59);
+    border-style: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 30px 50px rgb(65 50 100 / 20%);
+    background-color: #ffffff;
+    opacity: 0.7;
+    background-image: linear-gradient(
+        #f0efed 0.6000000000000001px,
+        transparent 0.6000000000000001px
+      ),
+      linear-gradient(
+        to right,
+        #f0efed 0.6000000000000001px,
+        #ffffff 0.6000000000000001px
+      );
+    background-size: 12px 12px;
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+  .github-repository {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .github-repository a:hover {
+    font-weight: bold;
+  }
+  
+  .pin1 {
+    max-width: 50px;
+    position: relative;
+    left: -10px;
+    float: left;
+  }
+  
+  .current-temperature {
+    position: relative;
+    left: -30px;
+    margin: 0px 10px;
+  }
+  
+  @media (max-width: 480px) {
+    .icon {
+      height: 50px;
+    }
+  
+    .pin1 {
+      position: relative;
+      top: 30px;
+    }
+    .container-app {
+      margin: 0px;
+    }
+    .container-current-temperature {
+      padding: 0px;
+    }
+  }
+  
