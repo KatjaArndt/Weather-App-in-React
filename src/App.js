@@ -4,7 +4,8 @@ import Weather from "./Weather.js";
 export default function App() {
   return (
     <div className="App">
-      <Weather />
+      <div className ="container">
+              <Weather />
       <div className="github-repository">
         <a
           href="https://github.com/KatjaArndt/Weather-App-in-React"
@@ -17,6 +18,8 @@ export default function App() {
         </a>
         &nbsp;by Katja Arndt
       </div>
+      </div>
+
     </div>
   );
 }
