@@ -13,7 +13,7 @@ export default function App() {
           alt="Link to github repository"
           className="link-dark"
         >
-          Open-Source Code
+          Open-Source Code blablabla
         </a>
         &nbsp;by Katja Arndt
       </div>
