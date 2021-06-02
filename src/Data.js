@@ -7,11 +7,11 @@ export default function Data() {
   };
   return (
     <div className="Data">
-      <h1 class="city">{weatherData.city}</h1>
-      <h2>
-        Last updated:
-        <span class="date"> {weatherData.date}</span>
-      </h2>
-    </div>
+    <h1 class="city">{weatherData.city}</h1>
+    <h2>
+      Last updated:
+      <span class="date"> {weatherData.date}</span>
+    </h2>
+  </div>
   );
 }
