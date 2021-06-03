@@ -21,22 +21,19 @@
     font-weight: bold;
   }
 
-  
+
   .current-temperature {
     position: relative;
-    left: -30px;
+    left: -16px;
     margin: 0px 10px;
+    font-family: 'Staatliches', cursive;
   }
   
   @media (max-width: 480px) {
     .icon {
       height: 50px;
     }
-  
-    .pin1 {
-      position: relative;
-      top: 30px;
-    }
+
     .container-app {
       margin: 0px;
     }
@@ -57,7 +54,8 @@
   }
   
   .city-text {
-    border: 1px solid #eba689;
+    border: 1px solid #a14016;
+    border-radius: 50px;
     font-size: smaller;
   }
   
@@ -67,32 +65,40 @@
   
   .city-text:hover {
     background-color: #eeeeee;
+
   }
   
   .submit-button {
-    background-color: #eba689;
+    background-color: #da5a37;
     box-shadow: 0 20px 40px rgb(65 50 100 / 10%);
-    border: 1px solid #eba689;
+    border: 1px solid #a14016;
+    border-radius: 50px;
     font-size: smaller;
+    color: #fafafa;
   }
   
   .submit-button:hover {
-    background-color: #ee7862;
-    border: 1px solid #ee7862;
+    background-color: #a16b57;
+    border: 1px solid #a16b57;
+
     font-weight: bold;
+    color: #fafafa;
   }
   
   .location-button {
     box-shadow: 0 20px 40px rgb(65 50 100 / 10%);
-    background-color: #b0b3a2;
-    border: 1px solid#b0b3a2;
+    background-color: #da5a37;
+    border: 1px solid #a14016;
+    border-radius: 50px;
     font-size: smaller;
+    color: #fafafa;
   }
   
   .location-button:hover {
-    background-color: #848871;
-    border: 1px solid #848871;
+    background-color: #a16b57;
+    border: 1px solid #a16b57;
     font-weight: bold;
+    color: #fafafa;
   }
   
   @media (max-width: 480px) {
@@ -100,18 +106,19 @@
   
 {/*datacss*/}
 h1 {
-  color: #6d7975;
+  color: #577e89;
   text-transform: uppercase;
-  font-family: "Amatic SC", cursive;
-  font-size: 100px;
+  font-family: 'Staatliches', cursive;
+  font-size: 70px;
   padding: 10px 0px 10px 0px;
-  margin: 0px;
+  margin: 5px 0px 0px 0px;
   line-height: 0.8;
 }
 h2 {
-  color: #6d7975;
-  font-size: smaller;
+  color: #6f9f9c;
+  font-size: 15px;
   margin: 0;
+  font-family: 'Staatliches', cursive;
 }
 
 @media (max-width: 480px) {
@@ -132,12 +139,13 @@ ul {
 li {
   margin: 0px;
   padding: 0px;
-  text-align: center;
+  text-align: left;
 }
 .currentTemperature {
   font-style: bold;
   font-size: 70px;
-  font-family: "Amatic SC", cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #577e89
 }
 .icon {
   position: relative;
@@ -146,14 +154,15 @@ li {
 }
 .units {
   position: relative;
-  left: -45px;
-  top: -20px;
+  left: -22px;
+  top: -22px;
   font-size: 40px;
+  font-family: 'Staatliches', cursive;
 }
 
 .container-current-temperature {
   display: block;
-  margin: 0px auto 0px;
+  margin: 16px auto 0px;
 }
 .col-sm-8 {
   padding: 0px;

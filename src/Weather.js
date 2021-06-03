@@ -65,7 +65,7 @@ export default function Weather() {
         <div className="col-sm-4">
           <ul>
             <li>
-              <span className="description">Clear Sky</span>
+            Conditions:<span className="description"> Clear Sky</span>
             </li>
             <li>
               Humidity: <span className="humidity">80</span>%

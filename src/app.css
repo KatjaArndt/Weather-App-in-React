@@ -1,7 +1,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     color: rgb(48, 48, 48);
-    background-image: linear-gradient(to right top, #73c8a9, #8bcda7, #a1d2a6, #b5d7a9, #c8dbad, #cedaa9, #d5d9a5, #dcd8a1, #dcd192, #ddc982, #dfc174, #e1b866);
+    background-image: linear-gradient(to right top, #e1a36f, #e1a972, #e0b075, #e0b679, #dfbc7d, #dfc082, #dfc587, #dfc98d, #e0cd93, #e0d19a, #e1d4a0, #e2d8a7);
   }
   
   @media (max-width: 480px) {
