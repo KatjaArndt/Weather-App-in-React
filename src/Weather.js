@@ -42,33 +42,33 @@ export default function Weather() {
 
             {/*<Search />*/}
              <div className="Data">
-      <h1 class="city">New York</h1>
+      <h1 className="city">New York</h1>
       <h2>
         Last updated:
-        <span class="date"> Saturday 06:42</span>
+        <span className="date"> Saturday 06:42</span>
       </h2>
     </div>
             {/*<Data />*/}
             <div className="CurrentWeather">
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="currentTemperature">
+      <div className="row">
+        <div className="col-sm-8">
+          <div className="currentTemperature">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
               className="icon"
               alt="Clear Sky"
             />
-            <span class="current-temperature">10</span>
-            <span class="units">°C</span>
+            <span className="current-temperature">10</span>
+            <span className="units">°C</span>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div className="col-sm-4">
           <ul>
             <li>
-              <span class="description">Clear Sky</span>
+              <span className="description">Clear Sky</span>
             </li>
             <li>
-              Humidity: <span class="humidity">80</span>%
+              Humidity: <span className="humidity">80</span>%
             </li>
             <li>
               Wind: <span class="wind">5</span> km/h

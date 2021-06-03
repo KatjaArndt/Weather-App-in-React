@@ -11,7 +11,7 @@ ul {
   .currentTemperature {
     font-style: bold;
     font-size: 70px;
-    font-family: "Amatic SC", cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
   }
   .icon {
     position: relative;
