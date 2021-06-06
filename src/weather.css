@@ -65,40 +65,45 @@
   
   .city-text:hover {
     background-color: #eeeeee;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    background-color: #f8f9fa;
 
   }
   
   .submit-button {
     background-color: #da5a37;
     box-shadow: 0 20px 40px rgb(65 50 100 / 10%);
-    border: 1px solid #a14016;
+    border: 1px solid #da5a37;
     border-radius: 50px;
     font-size: smaller;
     color: #fafafa;
+    position: relative;
+    left: 3px;
+  
   }
   
   .submit-button:hover {
-    background-color: #a16b57;
-    border: 1px solid #a16b57;
-
-    font-weight: bold;
+    background-color: #a14016;
+    border: 1px solid #da5a37;
     color: #fafafa;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
   }
   
   .location-button {
     box-shadow: 0 20px 40px rgb(65 50 100 / 10%);
     background-color: #da5a37;
-    border: 1px solid #a14016;
+    border: 1px solid #da5a37;
     border-radius: 50px;
     font-size: smaller;
     color: #fafafa;
+   
   }
   
   .location-button:hover {
-    background-color: #a16b57;
-    border: 1px solid #a16b57;
-    font-weight: bold;
+    background-color: #a14016;
+    border: 1px solid #a14016;
     color: #fafafa;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
   }
   
   @media (max-width: 480px) {
@@ -134,6 +139,7 @@ h2 {
 ul {
   list-style: none;
   padding: 20px 0px 20px 0px;
+  margin: 5px;
 }
 
 li {
@@ -193,6 +199,10 @@ li {
   }
   ul {
     padding: 0px;
+  }
+  li {
+  
+    text-align: center;
   }
 }
 
