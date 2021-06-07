@@ -16,7 +16,7 @@ export default function Weatherinfo (props){
      {/*<Data />*/}
      <div className="CurrentWeather">
       <div className="row">
-        <div className="col-sm-8">
+        <div className="col-sm-7">
           <div className="currentTemperature">
             <img
               src={props.data.icon}
@@ -27,7 +27,7 @@ export default function Weatherinfo (props){
             <span className="units">°C</span>
           </div>
         </div>
-        <div className="col-sm-4">
+        <div className="col-sm-5">
           <ul>
             <li>
             Conditions:<span className="description"> {props.data.description}</span>

@@ -139,7 +139,7 @@ h2 {
 ul {
   list-style: none;
   padding: 20px 0px 20px 0px;
-  margin: 5px;
+  margin-top: 5px;
 }
 
 li {
@@ -156,7 +156,7 @@ li {
 .icon {
   position: relative;
   top: -7px;
-  margin: 0px 20px;
+  margin: 0px px;
 }
 .units {
   position: relative;
@@ -170,11 +170,11 @@ li {
   display: block;
   margin: 16px auto 0px;
 }
-.col-sm-8 {
+.col-sm-7 {
   padding: 0px;
 }
 
-.col-sm-4 {
+.col-sm-5 {
   font-size: smaller;
   padding: 0px;
 }
