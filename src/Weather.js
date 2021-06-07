@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 //import Search from "./Search";
 //import Forecast from "./Forecast";
 //import CurrentWeather from "./CurrentWeather";
 //import Data from "./Data";
+import axios from "axios";
 import "./weather.css";
 
-export default function Weather() {
-  return (
+export default function Weather(props) {
+  const [weather, setWeather] =useState("{loaded: false}");
+ 
+function showWeather(response){
+  
+  setWeather ({
+      temperature: Math.round(response.data.main.temp),
+      humidity: Math.round(response.data.main.humidity),
+      description: response.data.weather[0].description,
+      wind: response.data.wind.speed,
+      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      city: response.data.name,
+      date: "Sunday",
+      loaded: true,
+  })
+
+}
+    if(weather.loaded === true){
+ return (
     <div className="Weather">
       <div className="container-app container-sm">
         <div className="row">
@@ -42,10 +60,10 @@ export default function Weather() {
 
             {/*<Search />*/}
              <div className="Data">
-      <h1 className="city">New York</h1>
+      <h1 className="city">{weather.city}</h1>
       <h2>
         Last updated:
-        <span className="date"> Saturday 06:42</span>
+        <span className="date"> {weather.date}</span>
       </h2>
     </div>
             {/*<Data />*/}
@@ -54,24 +72,24 @@ export default function Weather() {
         <div className="col-sm-8">
           <div className="currentTemperature">
             <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              src={weather.icon}
               className="icon"
-              alt="Clear Sky"
+              alt={weather.description}
             />
-            <span className="current-temperature">10</span>
+            <span className="current-temperature">{weather.temperature}</span>
             <span className="units">°C</span>
           </div>
         </div>
         <div className="col-sm-4">
           <ul>
             <li>
-            Conditions:<span className="description"> Clear Sky</span>
+            Conditions:<span className="description"> {weather.description}</span>
             </li>
             <li>
-              Humidity: <span className="humidity">80</span>%
+              Humidity: <span className="humidity">{weather.humidity}</span>%
             </li>
             <li>
-              Wind: <span className="wind">5</span> km/h
+              Wind: <span className="wind">{weather.wind}</span> km/h
             </li>
           </ul>
         </div>
@@ -87,4 +105,14 @@ export default function Weather() {
       </div>
     </div>
   );
+    }
+    else{
+      const apiKey = "f143df7f1b181bffea844af95239068d";
+      let units = "metric";
+      let apicity = `${props.defaultCity}`;
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${apicity}&appid=${apiKey}&units=${units}`;
+      axios.get(apiUrl).then(showWeather);
+      return "Loading";
+    }
+ 
 }
