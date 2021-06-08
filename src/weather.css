@@ -30,7 +30,7 @@
   }
   
   @media (max-width: 480px) {
-    .icon {
+    canvas {
       height: 50px;
     }
 
@@ -153,10 +153,9 @@ li {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #577e89
 }
-.icon {
+canvas {
   position: relative;
-  top: -7px;
-  margin: 0px px;
+  margin-right: 20px;
 }
 .units {
   position: relative;

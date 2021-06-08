@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./weather.css";
 
-import Weatherinfo from "./Weatherinfo.js";
+import WeatherInfo from "./WeatherInfo.js";
 
 export default function Weather(props) {
   const [weather, setWeather] =useState("{loaded: false}");
@@ -19,7 +19,7 @@ function showWeather(response){
       humidity: Math.round(response.data.main.humidity),
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       loaded: true,
@@ -78,7 +78,7 @@ setCity (event.target.value);
         </form>
       </div>
     </div>
- <Weatherinfo data = {weather}/>
+ <WeatherInfo data = {weather}/>
            
    
            
