@@ -136,6 +136,13 @@ h2 {
 
 
 {/*currentweathercss*/}
+a {
+  color: #577e89;
+  text-decoration: none;
+}
+a:hover {
+  color: #83c4d7;
+}
 ul {
   list-style: none;
   padding: 20px 0px 20px 0px;
@@ -155,11 +162,11 @@ li {
 }
 canvas {
   position: relative;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .units {
   position: relative;
-  left: -22px;
+  left: -18px;
   top: -21px;
   font-size: 40px;
   font-family: 'Staatliches', cursive;
