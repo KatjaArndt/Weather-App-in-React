@@ -22,22 +22,25 @@ export default function WeatherInfo (props){
           <div className="currentTemperature">
           
            
-                  <WeatherIcon code={props.data.icon} />
+                  
               
 <WeatherTemperature celsius = {props.data.temperature}/>
-           
+           <WeatherIcon code={props.data.icon} />
           </div>
         </div>
         <div className="col-sm-5">
           <ul>
             <li>
-            Conditions:<span className="description"> {props.data.description}</span>
+            <strong>Conditions:
+              </strong><span className="description"> {props.data.description}</span>
             </li>
             <li>
-              Humidity: <span className="humidity">{props.data.humidity}</span>%
+              <strong>Humidity:
+                </strong> <span className="humidity">{props.data.humidity}</span>%
             </li>
             <li>
-              Wind: <span className="wind">{props.data.wind}</span> km/h
+              <strong>Wind:
+                </strong> <span className="wind">{props.data.wind}</span> km/h
             </li>
           </ul>
         </div>
