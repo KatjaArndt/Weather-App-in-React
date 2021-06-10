@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-
 import WeatherForecast from "./WeatherForecast.js";
-
-
 import axios from "axios";
 import "./weather.css";
-
 import WeatherInfo from "./WeatherInfo.js";
 
 export default function Weather(props) {
@@ -22,6 +18,7 @@ function showWeather(response){
       icon: response.data.weather[0].icon,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
+      coordinates: response.data.coord,
       loaded: true,
   })
 
@@ -84,7 +81,7 @@ setCity (event.target.value);
            
             
           </div>
-          <WeatherForecast/>
+          <WeatherForecast coordinates={weather.coordinates}/>
           
           
         </div>

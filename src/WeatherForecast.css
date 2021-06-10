@@ -1,8 +1,13 @@
-/*.weather-forecast {
+.weather-forecast {
     max-width: 600px;
     text-align: center;
 }
 
+.weather-forecast canvas {
+    position: relative;
+    top: 0px; 
+    right: 0px;
+}
 .weather-forecast-day {
     font-size: 18px;
 }
