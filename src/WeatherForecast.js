@@ -1,6 +1,6 @@
 import React from "react";
-import "./forecast.css";
-export default function Forecast() {
+//import "./WeatherForecast.css";
+export default function WeatherForecast() {
   return (
     <div className="Forecast">
       <div className="weather-forecast forecast">Forecast</div>

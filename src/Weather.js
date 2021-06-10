@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-//import Search from "./Search";
-//import Forecast from "./Forecast";
-//import CurrentWeather from "./CurrentWeather";
-//import Data from "./Data";
+
+import WeatherForecast from "./WeatherForecast.js";
+
+
 import axios from "axios";
 import "./weather.css";
 
@@ -82,12 +82,11 @@ setCity (event.target.value);
            
    
            
-            {/*<CurrentWeather />*/}
+            
           </div>
-          <div className="Forecast">
-      <div className="weather-forecast forecast">Forecast</div>
-    </div>
-          {/*<Forecast />*/}
+          <WeatherForecast/>
+          
+          
         </div>
       </div>
     </div>
