@@ -26,7 +26,7 @@
     margin: 0px auto 0px;
 }
 
-.weather-forecast .col-sm {
+.weather-forecast {
     filter: grayscale(0.75);
     padding-bottom: 20px;
 }
