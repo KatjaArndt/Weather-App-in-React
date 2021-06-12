@@ -1,6 +1,7 @@
 .weather-forecast {
     max-width: 600px;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .weather-forecast canvas {
