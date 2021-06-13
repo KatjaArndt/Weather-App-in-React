@@ -31,6 +31,15 @@ function search(){
   axios.get(apiUrl).then(showWeather);
 }
 
+function retrievePosition(position){
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "f143df7f1b181bffea844af95239068d";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`; 
+  axios.get(apiUrl).then(showWeather);
+  }
+
 function handleSubmit(event){
   event.preventDefault();
   search();
@@ -39,6 +48,10 @@ function handleSubmit(event){
 function handleInput(event){
 setCity (event.target.value);
 }
+
+function getPositionFromDevice(event){
+  navigator.geolocation.getCurrentPosition(retrievePosition);
+    }
 
     if(weather.loaded === true){
  return (
@@ -66,7 +79,7 @@ setCity (event.target.value);
               />
             </div>
             <div className="col-sm py-1 px-1">
-              <button type="button" className="btn btn-light location-button">
+              <button type="button" onClick ={getPositionFromDevice} className="btn btn-light location-button">
                 {" "}
                 My Location 📍{" "}
               </button>
